@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5427" started-at="2018-02-14T10:48:28Z" finished-at="2018-02-14T10:48:34Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5427" started-at="2018-02-14T10:48:28Z" finished-at="2018-02-14T10:48:34Z">
+      <class name="com.tyss.MavenDemo.MavenTest">
+        <test-method status="PASS" signature="loggin()[pri:0, instance:com.tyss.MavenDemo.MavenTest@4f7d0008]" name="loggin" duration-ms="5405" started-at="2018-02-14T16:18:28Z" finished-at="2018-02-14T16:18:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggin -->
+      </class> <!-- com.tyss.MavenDemo.MavenTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
