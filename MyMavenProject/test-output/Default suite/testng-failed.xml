@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.tyss.MavenDemo.MavenTest">
+      <class name="com.tyss.MavenDemoTest.HomeTest">
         <methods>
-          <include name="loggin"/>
+          <include name="configLoggin"/>
+          <include name="configClosingReport"/>
+          <include name="configReport"/>
+          <include name="configLoggout"/>
+          <include name="demoTest"/>
+          <include name="ConfigBrowser"/>
+          <include name="configCleanup"/>
         </methods>
-      </class> <!-- com.tyss.MavenDemo.MavenTest -->
+      </class> <!-- com.tyss.MavenDemoTest.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
