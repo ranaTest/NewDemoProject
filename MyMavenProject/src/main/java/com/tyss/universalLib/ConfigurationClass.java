@@ -1,8 +1,7 @@
 package com.tyss.universalLib;
 
 import java.io.File;
-
-
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,10 +11,9 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.yaml.snakeyaml.scanner.Constant;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class ConfigurationClass implements ConstantValues{
 	
@@ -54,20 +52,26 @@ public class ConfigurationClass implements ConstantValues{
 	@BeforeMethod
 	
 	public void configLoggin(){
-		
+		driver.get(Url);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.SECONDS);
 	}
 	
 	@AfterMethod
 	
 	public void configLoggout(){
+		logger.log(LogStatus.PASS, "i am from loggout");
+		
 		
 	}
 	
 	@AfterClass
 	
 	public void configCleanup(){
+		driver.quit();
 		
 	}
+	
 	
 	@AfterSuite
 	
