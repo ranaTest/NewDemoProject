@@ -11,17 +11,25 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ScreeShotProviderlib implements ITestListener{
+import com.relevantcodes.extentreports.LogStatus;
+
+public class ScreeShotProviderlib extends ConfigurationClass implements ITestListener{
 
 	@Override
 	public void onFinish(ITestContext Result) {
 		// TODO Auto-generated method stub
+		
+		logger.log(LogStatus.INFO,Result.getName()+ Result.getEndDate() );
+		logger.getEndedTime();
 		
 	}
 
 	@Override
 	public void onStart(ITestContext Result) {
 		// TODO Auto-generated method stub
+		
+		logger.log(LogStatus.INFO, Result.getName()+ Result.getStartDate());
+		logger.getStartedTime();
 		
 	}
 
