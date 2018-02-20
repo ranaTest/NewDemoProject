@@ -37,7 +37,7 @@ public class ConfigurationClass implements ConstantValues{
 		extent.addSystemInfo("Team Lead", "Suchit");
 		
 	}
-	
+	 
 	@BeforeClass
 	
 	public void ConfigBrowser(){
