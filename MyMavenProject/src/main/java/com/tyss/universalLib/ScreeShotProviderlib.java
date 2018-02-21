@@ -10,6 +10,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -18,10 +19,7 @@ public class ScreeShotProviderlib extends ConfigurationClass implements ITestLis
 	@Override
 	public void onFinish(ITestContext Result) {
 		// TODO Auto-generated method stub
-		
-		logger.log(LogStatus.INFO,Result.getName()+ Result.getEndDate() );
-		logger.getEndedTime();
-		
+		String 
 	}
 
 	@Override

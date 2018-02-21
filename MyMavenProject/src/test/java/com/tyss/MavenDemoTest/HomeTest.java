@@ -18,19 +18,19 @@ public class HomeTest extends ConfigurationClass {
 		logger=extent.startTest("demotest");
 		
 		Reporter.log("rana",true);
-		logger.log(LogStatus.INFO, "I M 0");
+		logger.log(LogStatus.INFO, "I M monika");
 		
 		extent.endTest(logger);
 	}
 	
 	@Test
 	
-	public void demoTest1(){
+	public void demoranaTest(){
 		
 logger=extent.startTest("demotest");
 		
 		Reporter.log("rana",true);
-		logger.log(LogStatus.INFO, "I M 1");
+		logger.log(LogStatus.INFO, "I M rana");
 		
 		extent.endTest(logger);
 		
@@ -38,11 +38,11 @@ logger=extent.startTest("demotest");
 	
 	@Test
 	
-	public void demotest2(){
+	public void demomilontest(){
 logger=extent.startTest("demotest");
 		
 		Reporter.log("rana",true);
-		logger.log(LogStatus.INFO, "I M 2");
+		logger.log(LogStatus.INFO, "I M milon");
 		
 		extent.endTest(logger);
 	}
